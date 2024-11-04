@@ -9,7 +9,7 @@ import cart from '../../images/cart.png';
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
 import { StateProps } from '../../../type';
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signIn} from "next-auth/react";
 import { addUser } from '@/store/nextSlice';
 
 const Header = () => {
