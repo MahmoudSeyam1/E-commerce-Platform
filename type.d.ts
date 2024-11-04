@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface ProductProps {
     brand: string,
     category:    string,
@@ -22,9 +23,9 @@ export interface StoreProduct {
     quantity: number
 }
 
-export interface StateProps{
-    productData: StoreProduct[];
-    favoriteData: StoreProduct[];
-    userInfo: null | string,
-    next: unknown
-}
+export interface StateProps {
+    productData: [];
+    favoriteData: [];
+    userInfo: null | string;
+    next: any;
+    }

@@ -7,7 +7,9 @@ import { loadStripe } from "@stripe/stripe-js";
 import { useSession } from "next-auth/react";
 
 const CartPayment = () => {
-    const {productData, userInfo} = useSelector((state: StateProps) => state.next);
+    const {productData, userInfo} = useSelector(
+        (state: StateProps) => state.next
+    );
     const [totalAmount, setTotalAmount] = useState(0);
     useEffect(() => {
         let amt= 0;
